@@ -11,9 +11,10 @@ Each subdirectory contains some code that needs refactoring.
 ## `time/timestamp.py`
 
 Refactor timestamp.py.  2 or 3 refactorings are possible.
-```- rename the function createTimeFromTimestamp to create_time_from_timestamp
-   - rename the method createTimeFromTimestamp to create_time_from_timestamp
-   - extract method to `is_valid_time`(to check valid time).
+```
+  - rename the function createTimeFromTimestamp to create_time_from_timestamp
+  - rename the method createTimeFromTimestamp to create_time_from_timestamp
+  - extract method to `is_valid_time`(to check valid time).
 ```
 
 ## `game_framework/gamelib.py`
@@ -25,9 +26,10 @@ Look for refactorings in the class `GameApp`.
 * Encapsulate a collection - provide behavior that subclasses of GameApp need instead of requiring them to manipulate a collection that belongs to the GameApp class.
   - Hint: `elements`
   
-``` - refactor by replace side effect with return value
-    - refactor by add parameters instead of accessing attributes
-    - Make global variable for TIMER_DELAY CANVAS HEIGHT,WIDTH
+```
+ - refactor by replace side effect with return value
+ - refactor by add parameters instead of accessing attributes
+ - Make global variable for TIMER_DELAY CANVAS HEIGHT,WIDTH
 ```
 
 ## `recipe/recipe.py` and `recipe/main.py`
@@ -43,7 +45,8 @@ The Recipe class defines a recipe for a hot beverage with attributes:
 * price - (float) price in Baht
 
 Refactor `main.py`.  What can you do to eliminate the long, boring code?
-``` ```
+
+```- refactor by replace redundant code with creational method ```
 
 
 
