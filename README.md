@@ -25,7 +25,10 @@ Look for refactorings in the class `GameApp`.
 * Encapsulate a collection - provide behavior that subclasses of GameApp need instead of requiring them to manipulate a collection that belongs to the GameApp class.
   - Hint: `elements`
   
-``` ```
+``` - refactor by replace side effect with return value
+    - refactor by add parameters instead of accessing attributes
+    - Make global variable for TIMER_DELAY CANVAS HEIGHT,WIDTH
+```
 
 ## `recipe/recipe.py` and `recipe/main.py`
 
