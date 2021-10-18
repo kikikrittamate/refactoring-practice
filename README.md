@@ -11,7 +11,11 @@ Each subdirectory contains some code that needs refactoring.
 ## `time/timestamp.py`
 
 Refactor timestamp.py.  2 or 3 refactorings are possible.
-```I refactor the function name```
+```- rename the function createTimeFromTimestamp to create_time_from_timestamp
+   - rename the method createTimeFromTimestamp to create_time_from_timestamp
+   - extract method to `is_valid_time`(to check valid time).
+   - 
+```
 
 ## `game_framework/gamelib.py`
 
